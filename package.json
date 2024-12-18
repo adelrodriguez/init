@@ -16,7 +16,10 @@
     "lint": "turbo lint",
     "lint:repo": "sherif --fix",
     "sort:package-json": "sort-package-json '**/package.json' '!**/node_modules/**'",
-    "typecheck": "turbo typecheck --continue"
+    "typecheck": "turbo typecheck --continue",
+    "sync:list": "syncpack list",
+    "sync:mismatched": "syncpack list-mismatches",
+    "sync:mismatched:fix": "syncpack fix-mismatches"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
@@ -24,6 +27,7 @@
     "dotenv": "^16.4.7",
     "sherif": "^1.1.1",
     "sort-package-json": "^2.12.0",
+    "syncpack": "^13.0.0",
     "taze": "^0.18.0",
     "tsx": "^4.19.2",
     "turbo": "^2.3.3",
